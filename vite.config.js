@@ -5,6 +5,7 @@ import solidPlugin from 'vite-plugin-solid'
 import path from 'path'
 
 export default defineConfig({
+  base: '/uniclass-action/',
   baseURL: process.env.BASE_PATH,
   resolve: {
     alias: [{ find: '@', replacement: path.resolve(__dirname, './src') }],
